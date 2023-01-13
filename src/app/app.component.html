@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let item of slideItems;let i = index">
+    <img  *ngIf="i == counter" @fade [src]="slideItems[i].src" alt="item.title">
+  </li>
+</ul>
+
+
+<button (click)="showPreviousImage()">previous</button> || 
+<button (click)="showNextImage()">next</button>
+
